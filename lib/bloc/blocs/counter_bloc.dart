@@ -1,6 +1,7 @@
 import 'dart:async';
+import 'package:rxdart/rxdart.dart';
 
-import 'package:bloc_counter/bloc/counter_provider.dart';
+import 'package:bloc_counter/bloc/resources/counter_provider.dart';
 
 class CounterBloc {
   final counterController = StreamController(); //create Stream controller

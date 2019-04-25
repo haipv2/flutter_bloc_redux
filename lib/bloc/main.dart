@@ -1,7 +1,7 @@
-import 'package:bloc_counter/bloc/counter.dart';
+import 'package:bloc_counter/bloc/ui/counter.dart';
 import 'package:flutter/material.dart';
 import 'dart:async';
-import 'package:bloc_counter/bloc/counter_bloc.dart';
+import 'package:bloc_counter/bloc/blocs/counter_bloc.dart';
 
 void main() => runApp(MyApp());
 

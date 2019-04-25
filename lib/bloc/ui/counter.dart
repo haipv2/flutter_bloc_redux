@@ -1,6 +1,6 @@
-import 'package:bloc_counter/bloc/counter_provider.dart';
+import 'package:bloc_counter/bloc/resources/counter_provider.dart';
 import 'package:flutter/material.dart';
-import 'package:bloc_counter/bloc/counter_bloc.dart';
+import 'package:bloc_counter/bloc/blocs/counter_bloc.dart';
 
 class Counter extends StatefulWidget {
   @override
