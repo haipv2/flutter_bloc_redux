@@ -11,7 +11,15 @@ class CounterBloc {
   var _repository = CounterProvider();
 
   final _publishSubj = PublishSubject<Counter>();
-  Observable<Counter> get counterStream => _publishSubj.stream;
+
+  Observable<Counter> get counterStream => _publishSubj.stream.transform(_transformCounter);
+
+  final _transformCounter =
+      StreamTransformer<Counter, Counter>.fromHandlers(handleData: (counter, sink){
+        counter.count+10;
+        sink.add(counter);
+  });
+
 
   CounterBloc(){
 //    _publishSubj.transform(_itemTransformer());
